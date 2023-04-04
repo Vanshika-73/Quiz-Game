@@ -24,7 +24,7 @@ function Questions() {
   const [number, setNum] = useState(0);
   const {id}=useParams();
   useEffect(() => {
-    axios.get(`http://localhost:1111/create_Question/${id}`).then(({ data:res }) => {
+    axios.get(`https://quiz-game-backend.vercel.app/create_Question/${id}`).then(({ data:res }) => {
         setData([...res]);
         setLoading(false);
       });
