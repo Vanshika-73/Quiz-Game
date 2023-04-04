@@ -14,7 +14,7 @@ function Questions() {
   const [score,setScore]=useState(0);
   const {id}=useParams();
   useEffect(() => {
-    axios.get(`https://quiz-game-c5h5a58qv-vanshika-73.vercel.app/${id}`).then(({ data:res }) => {
+    axios.get(`https://quiz-game-backend.vercel.app/${id}`).then(({ data:res }) => {
         console.log(res);
         setData([...res]);
         console.log("data:", data);
