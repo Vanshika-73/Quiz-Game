@@ -1,0 +1,28 @@
+.form-check{
+    background-color: #e5cff8;
+    border: 2px solid #340647;
+    width: 50vw;
+    font-size: 20px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.form-check:hover{
+    background-color: #340647;
+    color: #e5cff8;
+    transform: scale(1.1);
+    transition: all 0.4s;
+    border: none;
+    box-shadow:15px;
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@media only screen and (max-width:416px) {
+    .form-check{
+        width: 250px;
+        margin-left: 20px;
+    }
+}
