@@ -19,7 +19,7 @@ function Questions() {
       .get(`https://quiz-game-backend.vercel.app/create_Question/${id}`)
       .then((res) => {
         console.log("dta", res.data);
-        setData([...res]);
+        setData(res?.data);
         setLoading(false);
       });
   }, [data]);
