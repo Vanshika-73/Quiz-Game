@@ -5,11 +5,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "predeploy":"npm run dev",
     "deploy":"gh-pages -d build",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "react-scripts build",
+    "test": "react-scripts eject",
+    "eject":"react-scripts eject"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
